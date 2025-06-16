@@ -11,6 +11,7 @@ import {
 import { from } from 'rxjs';
 
 import { type UserI } from './user.model';
+import { Card } from "../shared/card/card";
 
 // import { DUMMY_USERS } from '../dummy-users';
 
@@ -24,7 +25,7 @@ type UserT = {
 
 @Component({
   selector: 'app-user',
-  imports: [],
+  imports: [Card],
   templateUrl: './user.html',
   styleUrl: './user.scss',
 })
